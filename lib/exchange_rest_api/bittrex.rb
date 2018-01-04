@@ -15,7 +15,7 @@ module ExchangeRestApi
   class Bittrex
     attr_accessor :host
 
-    def initialize(host)
+    def initialize(host = 'https://bittrex.com/api/v1.1')
       @host = host
     end
 
