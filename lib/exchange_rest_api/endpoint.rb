@@ -3,8 +3,8 @@ module ExchangeRestApi
     attr_reader :endpoint_type, :exchange, :market
 
     EXCHANGE_MAPPING = {
-      'bittrex' => Bittrex,
-      'bitfinex' => Bitfinex
+      'bittrex' => Api::Bittrex,
+      'bitfinex' => Api::Bitfinex
     }
 
     def initialize(endpoint_type:, exchange:, market:)

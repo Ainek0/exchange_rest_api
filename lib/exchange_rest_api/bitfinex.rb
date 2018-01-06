@@ -1,4 +1,4 @@
-module ExchangeRestApi
+module Api
   class Bitfinex
     attr_accessor :host
 

@@ -11,7 +11,7 @@ BUY_ENDPOINT = "/market/buylimit"
 SELL_ENDPOINT = "/market/selllimit"
 CANCEL_ENDPOINT = "/market/cancel"
 
-module ExchangeRestApi
+module Api
   class Bittrex
     attr_accessor :host
 
