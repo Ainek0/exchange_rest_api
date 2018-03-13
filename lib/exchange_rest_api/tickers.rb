@@ -4,7 +4,7 @@ module Tickers
     attr_reader :message
 
     def initialize(message)
-			@message = message
+      @message = message
     end
   end
 
