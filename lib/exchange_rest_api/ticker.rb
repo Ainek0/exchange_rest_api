@@ -10,7 +10,7 @@ module ExchangeRestApi
     def initialize(messages)
       @metadata = messages[0]
       @exchange = EXCHANGE_MAPPING[metadata['exchange']]
-      metadata['timestamp'] = Time.at(messages[1].to_f)
+			metadata['timestamp'] = Time.at(messages[1].to_f).iso8601(6)
       @message = messages[2]
     end
 
