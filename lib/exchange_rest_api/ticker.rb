@@ -1,3 +1,5 @@
+require 'time'
+
 module ExchangeRestApi
   class Ticker
     attr_reader :metadata, :exchange, :message
